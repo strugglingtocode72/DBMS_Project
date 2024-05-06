@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hotel Booking Website</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/nav.css" />
+    <link rel="stylesheet" href="/indexcard.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <%- include("nav.ejs") %>
+
+    <main>
+      <div class="success-div">
+        <h3>Payment Successfully Processed!</h3>
+      </div>
+      <div class="failure-div">
+        <h3>Payment Failed! Please try again later.</h3>
+      </div>
+      <div class="main-img">
+        <div class="absolute-text">
+          <h1>Enjoy Your <br />Dream Vacation</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+            ab, esse minus officiis excepturi accusantium dicta consequuntur
+            alias illo, dolor dignissimos rem consectetur. Assumenda, nihil
+            impedit recusandae itaque illo neque?
+          </p>
+        </div>
+
+        <img src="/cmophoto-net-EmVKKf3wUZQ-unsplash.jpg" alt="" />
+
+        <div class="insert-main">
+          <form class="insert-option-flex search" action="">
+            <div class="">
+              <label class="label-heading" for="">Location</label>
+              <select name="" id="" class="location">
+                <option value="">--- Select Option ---</option>
+                <option value="">Karachi</option>
+                <option value="">Islamabad</option>
+                <option value="">Peshawar</option>
+                <option value="">Lahore</option>
+                <option value="">Quetta</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="label-heading" for="">Room type</label>
+              <select name="" class="room">
+                <option value="">--- Select Option ---</option>
+                <option value="EXECUTIVE">Executive Room</option>
+                <option value="PRIME">Prime Room</option>
+                <option value="DELUXE">Deluxe Room</option>
+              </select>
+            </div>
+            <div>
+              <label class="label-heading">Check-In Date:</label>
+              <input type="date" />
+            </div>
+
+            <div>
+              <label class="label-heading">Check-Out Date:</label>
+              <input type="date" />
+            </div>
+
+            <div>
+              <label class="label-heading">Total Person</label>
+              <select name="">
+                <option value="">--- Select Option ---</option>
+                <option value="">01</option>
+                <option value="">02</option>
+                <option value="">03</option>
+              </select>
+            </div>
+            <button class="book-now">
+              Book Now <img src="/search_icon.svg" class="search-icon" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <section class="cards-section">
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <img
+                src="/roberto-nickson-emqnSQwQQDo-unsplash.jpg"
+                alt="Product Image"
+              />
+              <h2 class="hotel-name">Regent Plaza</h2>
+            </div>
+            <div class="back">
+              <p>Description:</p>
+              <ul>
+                <li>
+                  <a href="form.html" class="card-link">Executive Room</a>
+                </li>
+                <li><a href="form.html" class="card-link">Prime Room</a></li>
+                <li><a href="/form" class="card-link">Deluxe Room</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <img
+                src="/vojtech-bruzek-Yrxr3bsPdS0-unsplash.jpg"
+                alt="Product Image"
+              />
+              <h2 class="hotel-name">Marriot Hotel</h2>
+            </div>
+            <div class="back">
+              <p>Description:</p>
+              <ul>
+                <li><a href="/form" class="card-link">Executive Room</a></li>
+                <li><a href="/form" class="card-link">Prime Room</a></li>
+                <li><a href="/form" class="card-link">Deluxe Room</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <img
+                src="/radoslav-bali-rtWu9kJ6TC0-unsplash.jpg"
+                alt="Product Image"
+              />
+              <h2 class="hotel-name">Movenpick Hotel</h2>
+            </div>
+            <div class="back">
+              <p>Description:</p>
+              <ul>
+                <li><a href="/form" class="card-link">Executive Room</a></li>
+                <li><a href="/form" class="card-link">Prime Room</a></li>
+                <li><a href="/form" class="card-link">Deluxe Room</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <img
+                src="/roberto-nickson-emqnSQwQQDo-unsplash.jpg"
+                alt="Product Image"
+              />
+              <h2 class="hotel-name">Pearl Continental Hotel</h2>
+            </div>
+            <div class="back">
+              <p>Description:</p>
+              <ul>
+                <li><a href="/form" class="card-link">Executive Room</a></li>
+                <li><a href="/form" class="card-link">Prime Room</a></li>
+                <li><a href="/form" class="card-link">Deluxe Room</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <img
+                src="/vojtech-bruzek-Yrxr3bsPdS0-unsplash.jpg"
+                alt="Product Image"
+              />
+              <h2 class="hotel-name">Serena Hotel</h2>
+            </div>
+            <div class="back">
+              <p>Description:</p>
+              <ul>
+                <li><a href="/form" class="card-link">Executive Room</a></li>
+                <li><a href="/form" class="card-link">Prime Room</a></li>
+                <li><a href="/form" class="card-link">Deluxe Room</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <img
+                src="/radoslav-bali-rtWu9kJ6TC0-unsplash.jpg"
+                alt="Product Image"
+              />
+              <h2 class="hotel-name">Avari Hotel</h2>
+            </div>
+            <div class="back">
+              <p>Description:</p>
+              <ul>
+                <li><a href="/form" class="card-link">Executive Room</a></li>
+                <li><a href="/form" class="card-link">Prime Room</a></li>
+                <li><a href="/form" class="card-link">Deluxe Room</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <img
+                src="/roberto-nickson-emqnSQwQQDo-unsplash.jpg"
+                alt="Product Image"
+              />
+              <h2 class="hotel-name">Grand Palm Hotel</h2>
+            </div>
+            <div class="back">
+              <p>Description:</p>
+              <ul>
+                <li><a href="/form" class="card-link">Executive Room</a></li>
+                <li><a href="/form" class="card-link">Prime Room</a></li>
+                <li><a href="/form" class="card-link">Deluxe Room</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <img
+                src="/vojtech-bruzek-Yrxr3bsPdS0-unsplash.jpg"
+                alt="Product Image"
+              />
+              <h2 class="hotel-name">Nishat Hotel</h2>
+            </div>
+            <div class="back">
+              <p>Description:</p>
+              <ul>
+                <li><a href="/form" class="card-link">Executive Room</a></li>
+                <li><a href="/form" class="card-link">Prime Room</a></li>
+                <li><a href="/form" class="card-link">Deluxe Room</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <img
+                src="/radoslav-bali-rtWu9kJ6TC0-unsplash.jpg"
+                alt="Product Image"
+              />
+              <h2 class="hotel-name">Dreamworld Hotel</h2>
+            </div>
+            <div class="back">
+              <p>Description:</p>
+              <ul>
+                <li><a href="/form" class="card-link">Executive Room</a></li>
+                <li><a href="/form" class="card-link">Prime Room</a></li>
+                <li><a href="/form" class="card-link">Deluxe Room</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Hotel Booking</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+.main{
+    text-align: center;
+    padding: 5rem;
+    font-size: 4rem;
+}
+.card-container{
+    /* align-items: center; */
+    align-content: center;
+}
+
+
+.front{
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+    align-items: center;    
+}
+
+.hotel-desc h3{
+    width: 100%;
+} 
+
+.front img{
+    width: 30rem;
+    height: 20rem;
+    border-radius: 2rem;
+    /* gap: 5rem; */
+    /* object-fit: scale-down; */
+    margin: 2rem;
+    /* margin-left: 1.6rem; */
+    margin-top: 0;
+}
+
+/* .hotel-desc{
+    display: inline-flex;
+} */
+
+.card__heading {
+    font-size: 2rem;
+    text-align: center;
+    /* text-emphasis: bold; */
+    padding-top: 2rem;
+}
+
+.front h3 {
+	/* color: #555; */
+    font-size: 2rem;
+    margin-left: 1.6rem;
+    margin-right: 20rem ;
+    /* width: -webkit-fill-available; */
+}
+
+.card{
+    background-color: white;
+    /* align-self: center; */
+    width: 90%;
+    height: 30rem;
+    border-radius: 2rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.front input[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px;
+	border: none;
+    width: 10rem;
+    margin-left: 55rem;
+	border-radius: 3px;
+    /* width: 100%; */
+	cursor: pointer;
+}
+
+.front input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+.city-country {
+    color: black !important;
+    margin-left:1.5rem !important;
+    text-align: left !important;
+    font-size: 2rem;
+}

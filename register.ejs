@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hotel Booking Website</title>
+    <link rel="stylesheet" href="nav.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="register.css" />
+    <script defer src="register.js"></script>
+  </head>
+  <body>
+    <%- include("nav.ejs") %>
+    <section class="book-page">
+      <div class="booking-box">
+        <div class="form-img">
+          <img src="sasha-kaunas-xEaAoizNFV8-unsplash.jpg" alt="" />
+        </div>
+
+        <div>
+          <div class="h2">
+            <h2 class="heading">Register</h2>
+          </div>
+
+          <form class="reg-form" id="reg-form">
+            <div class="first-name">
+              <label class="form-label"> First Name</label>
+              <input
+                class="form-input firstname"
+                type="text"
+                placeholder="First Name"
+              />
+            </div>
+
+            <div class="second-name">
+              <label class="form-label"> Last Name</label>
+              <input
+                class="form-input lastname"
+                type="text"
+                placeholder="Last Name"
+              />
+            </div>
+
+            <div class="email-address">
+              <label class="form-label">Email</label>
+              <input
+                class="form-input email"
+                type="email"
+                placeholder="Email"
+              />
+            </div>
+
+            <div class="username">
+              <label class="form-label">Username</label>
+              <input
+                class="form-input username"
+                id="username"
+                type="text"
+                placeholder="Username"
+              />
+            </div>
+
+            <div class="password">
+              <label class="form-label">Password</label>
+              <input
+                class="form-input password"
+                id="password"
+                type="password"
+                placeholder="Password"
+              />
+            </div>
+
+            <div class="confirm-password">
+              <label class="form-label">Confirm Password</label>
+              <input
+                class="form-input confirm-password"
+                id="confirm-password"
+                type="password"
+                placeholder="Confrim Password"
+              />
+            </div>
+            <div class="checkbox">
+              <input class="checkbox-box" type="checkbox" value="Check" />
+              <label class="checkbox-txt" for="checkbox">
+                Accept terms and conditions</label
+              ><br />
+            </div>
+            <input class="submit-btn" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

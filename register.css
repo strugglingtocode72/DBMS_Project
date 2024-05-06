@@ -1,0 +1,112 @@
+.reg-form {
+    column-gap: 1.6rem;
+    row-gap: 1.6rem;
+    gap: 1.6rem;
+    display: flex;
+    grid-template-columns: 20rem 20rem;
+    margin: 10rem;
+      margin-top: 10rem;
+      margin-bottom: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 0;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 60rem;
+  }
+.booking-box{
+    background-color: #fff;
+    width: 90%;
+    margin: 100px ;
+    display: flex;
+    height: 60rem;
+    /* padding: 20px; */
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;    
+}
+
+.form-img{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.form-img img {
+    width: inherit;
+    height: inherit;
+    object-fit: scale-down;
+}
+
+.email-address{
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.h2{
+    margin-top: 8rem;
+}
+
+.form-label{
+    display: block;
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.form-input{
+    width: 29rem;
+    height: 3.6rem;
+    border-radius: 5px;
+    outline: 1px solid #707070;
+    border: none;
+    padding-left: 1rem;
+}
+
+.form-input::placeholder{
+    padding-left: 1rem;
+}
+
+.submit-btn{
+    margin-top: 1.6rem;
+    width: 100%;
+    /* margin-left: 10rem; */
+    background-color: #4CAF50;
+    height: 3.6rem;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    /* margin-right: 10rem; */
+    display: inline-block;
+    /* padding: 10px; */
+    color: #fff;
+}
+.checkbox{
+    /* margin-top:15rem; */
+    /* margin-left: rem; */
+    display: flex;
+}
+.checkbox-box{
+    display: flex;
+    width:1.6rem ;
+    /* align-items: center; */
+}
+.checkbox-txt{
+    margin-left: .6rem;
+    display: inline-block;
+    justify-content: right;
+    font-size: 1.2rem;
+    color: #474747;
+}
+
+.book-page input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+

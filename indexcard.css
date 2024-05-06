@@ -1,0 +1,95 @@
+.card-container {
+    perspective: 1000px;
+  }
+  
+  .card {
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 6rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    perspective: 500px;
+  }
+  
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+  
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    transform: rotateY(0deg);
+    width: 400px;
+  }
+  
+  .front img{
+    border-top-right-radius:20px ;
+    border-top-left-radius:20px ;
+    width: inherit;
+    height: 25rem;
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+    padding: 20px;
+    padding-top:4rem;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2.4rem;
+  }
+  
+  .card-link{
+    color: black;
+    display: inline-block;
+    margin: 1.6rem;
+    text-decoration: none;
+  }
+  
+  .card-link:hover{
+    text-decoration: underline;
+    transition: all 2s ease;
+    color: #3e8e41;
+    
+  }
+  
+  .back p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 3.4rem;
+    font-weight: bold;
+  }
+  
+  h2 {
+    margin-top: 3rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  .cards-section{
+    margin-bottom: 5rem;
+    padding: 0 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  space-around;
+  }

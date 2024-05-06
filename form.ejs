@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hotel Booking Website</title>
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form.css" />
+    <script defer="" src="form.js"></script>
+  </head>
+  <body>
+    <%- include("nav.ejs") %>
+    <section class="book-page">
+      <div class="booking-box">
+        <div class="booking-container">
+          <div>
+            <h2 class="heading">Booking</h2>
+          </div>
+
+          <form class="booking-page">
+            <div class="first-name">
+              <label class="form-label"> First Name</label>
+              <input
+                class="form-input firstname"
+                type="text"
+                placeholder="First Name"
+              />
+            </div>
+
+            <div class="second-name">
+              <label class="form-label"> Last Name</label>
+              <input
+                class="form-input lastname"
+                type="text"
+                placeholder="Last Name"
+              />
+            </div>
+
+            <div class="email-address">
+              <label class="form-label">Email:</label>
+              <input
+                class="form-input email"
+                type="email"
+                placeholder="Email"
+              />
+            </div>
+
+            <div class="contact-no">
+              <label class="form-label">Contact Number</label>
+              <input
+                class="form-input phone-no"
+                type="tel"
+                placeholder="Phone no."
+              />
+            </div>
+
+            <div class="location">
+              <label class="form-label">Location:</label>
+              <input
+                class="form-input location__select"
+                type="text"
+                placeholder="City"
+              />
+            </div>
+
+            <div class="hotel-name">
+              <label class="form-label">Hotel Name:</label>
+              <input
+                class="form-input h-name"
+                type="text"
+                placeholder="Hotel Name"
+              />
+            </div>
+            <div class="room-name">
+              <label class="form-label">Hotel Name:</label>
+              <input
+                class="form-input r-type"
+                type="text"
+                placeholder="Room Type"
+              />
+            </div>
+
+            <div class="guests">
+              <label class="form-label" for="">Number of Guests:</label>
+              <input
+                class="form-input no-person"
+                type="number"
+                min="0"
+                max="3"
+              />
+            </div>
+
+            <div class="check-in">
+              <label class="form-label" class="label-heading"
+                >Check-In Date:</label
+              >
+              <input class="form-input cin-date" type="date" />
+            </div>
+
+            <div class="check-out">
+              <label class="form-label" class="label-heading"
+                >Check-Out Date:</label
+              >
+              <input class="form-input cout-date" type="date" />
+            </div>
+            <% if (locals.username) { %>
+            <input class="submit-btn" type="submit" value="Submit" />
+            <% } else { %>
+             <div>
+              <p class="not_signed" style="color: 'red'">Not Signed In</p>
+            <input class="submit-btn disabled" type="submit" value="Submit" disabled="true" />
+             </div>
+            <% } %>
+          </form>
+        </div>
+
+        <div class="form-img">
+          <div class="absolute-text">
+            <h1>Come Live With Us and Enjoy</h1>
+          </div>
+          <img src="andy-crone-yl4BeDe5x0c-unsplash.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    
+  </body>
+</html>

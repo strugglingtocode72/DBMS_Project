@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reviews Page</title>
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="register.css" /> -->
+    <link rel="stylesheet" href="reviews.css" />
+    <script defer="" src="review.js"></script>
+  </head>
+  <body>
+    <%- include("nav.ejs") %>
+
+    <main>
+      <div class="review-whole">
+        <section class="review">
+          <div class="review-text">
+            <h2>Bob Johnson</h2>
+            <p>
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum."
+            </p>
+          </div>
+        </section>
+      </div>
+      <div class="review-whole-form">
+        <form class="review-form">
+          <div class="stars">
+            <div class="rating">
+              <h2>Rating:</h2>
+              <div class="ratings">
+                <input type="radio" id="star5" name="rating" value="5" />
+                <label for="star5"></label>
+                <input type="radio" id="star4" name="rating" value="4" />
+                <label for="star4"></label>
+                <input type="radio" id="star3" name="rating" value="3" />
+                <label for="star3"></label>
+                <input type="radio" id="star2" name="rating" value="2" />
+                <label for="star2"></label>
+                <input type="radio" id="star1" name="rating" value="1" />
+                <label for="star1"></label>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2>Review:</h2>
+            <textarea
+              class="review-text-input"
+              name="Review_text"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Enter review here."
+            ></textarea
+            >
+          </div>
+          <% if (locals.username) { %>
+            <button class="submit-btn" type="submit" value="Submit" >Submit</button>
+            <% } else { %>
+             <div class="submit-btn-txt">
+              <p class="not_signed" style="color: 'red'">Not Signed In</p>
+            <button class="submit-btn disabled" type="submit" value="Submit" disabled="true" >Submit</button>
+             </div>
+            <% } %>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hotel Booking Website</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="card.css"> -->
+    <script defer="" src="login.js"></script>
+    <script
+      src="https://accounts.google.com/gsi/client"
+      async=""
+      defer=""
+    ></script>
+  </head>
+  <body>
+    <%- include("nav.ejs") %>
+    <section>
+      <div class="login-box">
+        <h2>Login</h2>
+        <form class="login-pg">
+          <label>Username:</label>
+          <input class="username" type="text" placeholder="Enter username" />
+
+          <label>Password:</label>
+          <input
+            class="password"
+            type="password"
+            placeholder="Enter password"
+          />
+
+          <input class="login_submit" type="submit" value="Login" />
+          <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
+          </div>
+          <div class="register">
+            <p>Don't have an account?</p>
+            <a href="/register">Register</a>
+          </div>
+        </form>
+        <div class="login__external">
+          <div
+            id="g_id_onload"
+            data-client_id="1037705040282-lomveifnrq0sj1119r99cq56op20c381.apps.googleusercontent.com"
+            data-context="signin"
+            data-ux_mode="popup"
+            data-callback="handleCredentialResponse"
+            data-auto_select="true"
+          ></div>
+
+          <div
+            class="g_id_signin"
+            data-type="standard"
+            data-shape="rectangular"
+            data-theme="outline"
+            data-text="signin_with"
+            data-size="large"
+            data-logo_alignment="left"
+          ></div>
+          <script>
+            async function handleCredentialResponse(response) {
+              console.log(response);
+              // const result = await fetch("/users/login", {
+              //   method: "POST",
+              //   headers: {
+              //     "Content-Type": "application/json",
+              //     "Access-Control-Allow-Origin": "*",
+              //   },
+              //   body: JSON.stringify({
+              //     gToken: response.credential,
+              //   }),
+              // })
+              //   .then((res) => res.json())
+              //   .then((res) => (window.location.href = res.path));
+            }
+          </script>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

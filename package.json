@@ -1,0 +1,36 @@
+{
+  "name": "hotel-bookin-online",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SibtainHaider/hotel-bookin-online.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SibtainHaider/hotel-bookin-online/issues"
+  },
+  "homepage": "https://github.com/SibtainHaider/hotel-bookin-online#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cheerio": "^1.0.0-rc.12",
+    "cookie-parser": "^1.4.6",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "google-auth-library": "^8.7.0",
+    "jsonwebtoken": "^9.0.0",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7",
+    "pg": "^8.10.0",
+    "sql": "^0.78.0",
+    "stripe": "^12.1.1"
+  }
+}

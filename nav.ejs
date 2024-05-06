@@ -1,0 +1,20 @@
+<script defer="" src="nav.js"></script>
+<nav class="nav-flex">
+    <a class="brand-name" href="/">HBO</a>
+    
+      <div class="links">
+        <a class="links-decor" href="/">Home</a></li>
+        <a class="links-decor" href="#">About</a></li>
+        <a class="links-decor" href="#">Hotels</a>
+        <a class="links-decor" href="/reviews"> Reviews</a>
+        <% if (locals.username) { %>
+        <a class="links-decor logout">Logout</a>
+        <% } else { %>
+        <a class="links-decor" href="/register">Sign Up</a>
+        <a class="links-decor" href="/login">Login</a>
+        <% } %>
+        
+       
+      </div>
+    
+  </nav>
